@@ -13,7 +13,7 @@ const port = process.env.PORT || 3000
 app.use(express.json())
 
 // ENABLE CORS
-app.use(cors('http://localhost:5173/'))
+app.use(cors('https://app-cadastro-usuario.netlify.app/'))
 
 // List all users
 app.get('/users', async (req, res) => {
